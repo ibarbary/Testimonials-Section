@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100vh;
+  margin: 0px;
+  font-size: 13px;
+  background-color: rgb(222, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials {
+  width: 70%;
+  display: grid;
+  grid-template-areas:
+    "a a b c"
+    "d e e c";
+  gap: 20px;
+}
+
+.testimonials div {
+  border-radius: 5px;
+  padding: 20px 30px;
+  box-shadow: 1px 1px 20px rgb(128, 118, 118);
+}
+
+figure {
+  margin: 0px;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid wheat;
+  width: 35px;
+}
+
+figcaption {
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  bottom: 4px;
+}
+
+figcaption p {
+  margin: 0px;
+}
+
+figcaption :nth-child(2) {
+  opacity: 50%;
+}
+
+figcaption .name {
+  font-weight: bold;
+}
+
+.card > p {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.card {
+  color: white;
+}
+
+.card p.review {
+  font-size: 1.1em;
+  font-weight: normal;
+  word-spacing: 1px;
+  opacity: 70%;
+}
+
+#card1 {
+  grid-area: a;
+  background-color: rgb(117, 65, 200);
+}
+
+#card1 figcaption {
+  color: wheat;
+}
+
+#card2 {
+  grid-area: b;
+  background-color: rgb(72, 85, 106);
+}
+
+#card3 {
+  grid-area: c;
+  background-color: rgb(255, 255, 255);
+  color: rgb(72, 85, 106);
+}
+
+#card4 {
+  grid-area: d;
+  background-color: rgb(255, 255, 255);
+  color: rgb(72, 85, 106);
+}
+
+#card5 {
+  grid-area: e;
+  background-color: rgb(25, 33, 46);
+}
+
+@media (max-width: 1200px) {
+  body {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
